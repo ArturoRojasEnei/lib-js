@@ -1,0 +1,62 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="tipsy.js" type="text/javascript"></script> 
+
+	<link href="tipsy.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<div style="text-align:center">
+<br /><br />
+<table align="center" id="gravity" cellspacing="20">
+  <tbody><tr>
+    <td>
+      <a id="north-west" href="#" original-title="This is an example of north-west gravity">Northwest</a>
+    </td>
+    <td>
+      <a id="north" href="#" original-title="This is an example of north gravity">North</a>
+    </td>
+    <td>
+      <a id="north-east" href="#" original-title="This is an example of north-east gravity">Northeast</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a id="west" href="#" original-title="This is an example of west gravity">West</a>
+    </td>
+    <td>&nbsp;</td>
+    <td>
+      <a id="east" href="#" original-title="This is an example of east gravity">East</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a id="south-west" href="#" original-title="This is an example of south-west gravity">Southwest</a>
+    </td>
+    <td>
+      <a id="south" href="#" original-title="This is an example of south gravity">South</a>
+    </td>
+    <td>
+      <a id="south-east" href="#" original-title="This is an example of south-east gravity">Southeast</a>
+    </td>
+  </tr>
+</tbody></table>
+<div>
+</body>
+<script>
+// Documentación en
+// http://onehackoranother.com/projects/jquery/tipsy/#download
+jQuery(document).ready(function(){
+    $('#north').tipsy({gravity: 'n'});
+    $('#south').tipsy({gravity: 's'});
+    $('#east').tipsy({gravity: 'e'});
+    $('#west').tipsy({gravity: 'w'});
+    $('#north-west').tipsy({gravity: 'nw'});
+    $('#north-east').tipsy({gravity: 'ne'});
+    $('#south-west').tipsy({gravity: 'sw'});
+    $('#south-east').tipsy({gravity: 'se'});
+  });
+</script>
+
+</html>
